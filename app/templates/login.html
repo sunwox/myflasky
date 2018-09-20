@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} Flask - Page in test {% endblock %}
+
+{% block page_content %}
+<div class="page-ader">
+    <form name = 'login' action = "/login" method="post">
+        Hello {{ title }} please login by:
+        <input type = "test" name="user" />
+    </form>
+</div>
+{% endblock %}
+

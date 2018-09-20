@@ -1,0 +1,200 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>世攀科技有限公司</title>
+    <style>
+        body{
+            margin: 0px 250px;
+        }
+
+        .title{
+            font-style: italic;
+            font-size:20px;
+            float:left;
+            margin:0px;
+            padding: 0px;
+            color:blue;
+        }
+
+        .search{
+            backgrand-color:yellow;
+            padding-top:60px;
+            float:right;
+        }
+        .clearfix::after{
+            content:"";
+            clear:both;
+            display:table;
+        }
+
+        .topmenu{
+            list-style-type: none;
+            width: 925px;
+            margin:0;
+            padding:0;
+            background-color: #3366cc;
+            overflow: hidden;
+        }
+        .topmenu li{
+            float:left;
+        }
+        .topmenu li a{
+            margin:0px;
+            padding:16px;
+            color:white;
+            display:inline-block;
+            text-decoration: none;
+        }
+        .topmenu li a:hover{
+            background-color:#ff704d;
+        }
+        .bigpicture img{
+            width:925px;
+            height:300px;
+        }
+        .disp{
+            width:925px;
+        }
+        .vendor{
+            margin:10px;
+            padding:0px;
+            width:200px;
+            border-style:solid;
+            border-width:1px;
+            border-color:gray;
+            float:left;
+
+        }
+        .vendor p{
+            background-color: #3366cc;
+            margin:0px;
+            height:30px;
+            color:white;
+            text-align:center;
+
+        }
+        .vendor a img{
+            margin:2px;
+            width:194px;
+            height:70px;
+            border-style:solid;
+            border-width:1px;
+            border-color:gray;
+        }
+        .vendor a{
+            display:inline-block
+        }
+        .vendor a:hover{
+            background-color:#ff704d;
+        }
+        .application{
+            margin:10px 30px;
+            padding:0px;
+            width:640px;
+            border-style:solid;
+            border-width:1px;
+            border-color:gray;
+            float:left;
+        }
+        .applititle{
+            background-color: #E0E0E0;
+            margin:0px;
+            height:30px;
+            color:blue;
+            text-align:center;
+        }
+
+        .build{
+            margin:15px;
+            width:96px;
+            float:left;
+            display:inline-block;
+        }
+
+        .build img{
+            margin:2px;
+            width:90px;
+            height:80px;
+            border-style:solid;
+            border-width:1px;
+            border-color:gray;
+        }
+
+        .footer{
+            text-align:center;
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="title">
+            <h1>spanic 世攀科技</h1>
+
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" name="search">
+                <input type="submit" value="search">
+            </form>
+
+        </div>
+    </div>
+    <div class="topmenu">
+        <li><a href="" class="active">网站首页</a></li>
+        <li><a href="{{ url_for('main.index') }}">公司介绍</a> </li>
+        <li><a href="{{ url_for('main.product') }}">代理产品</a> </li>
+        <li><a href="">解决方案</a> </li>
+        <li><a href="">人才招聘</a> </li>
+        <li><a href="">联系我们</a> </li>
+    </div>
+    <div class="bigpicture">
+        <img src="/static/picture/img_2117.gif" alt="no picture">
+    </div>
+    <div class="clearfix disp">
+        <div class="vendor">
+            <p>代理产品线</p>
+
+            <a href="http://www.union-ic.com" target="_blank"><img src="/static/picture/brand/union.gif" alt="no picture"></a>
+            <a href="http://chiphomer.com" target="_blank"><img src="/static/picture/brand/chiphomer.gif" alt="no picture"></a>
+            <a href="http://www.prisemi.com" target="_blank"><img src="/static/picture/brand/prisemi.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/ecore.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/eleconn.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/siward.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/txc.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/rakon.gif" alt="no picture"></a>
+        </div>
+        <div class="application">
+            <p class="applititle">产品应用</p>
+             <div class="build">
+                <img src="/static/picture/build.png" alt="no picture" width="100%" height="100%" >
+
+            </div>
+            <div>
+                <p>
+                      世攀科技有限公司成立于2008年，是一家专业技术型分销代理商。专注于集成电路、半导体IC及解决方案在智能家居、安防监控、无线互联、汽车电子、通讯系统、消费类电子等市场的推广和销售。旨在通过直接和间接的方式，向海内外消费电子市场提供优势的电子产品。
+
+公司一贯奉行客户至上、本着双赢思维的原则，以技术支持为先导，竭诚向广大客户提供先进的技术方案，成为消费电子类半导体独具特色的专业代理分销供应商。长年保存合作的客户超过一千家，并与国内众多知名客户建立了战略合作伙伴关系。同时也与国内外多家IC设计，电子元器件生产原厂建立了长久的代理合作关系，获得了广泛的信誉与支持，在同行业中享有较高的知名度。
+
+公司目前代理分销CHIPHOMER、ECORE、ECT、PRISEMI、RAKON、SIWARD、UNION等品牌，其产品包括音频功放、背光驱动、触摸控制、ESD/EMI保护、接口驱动、模拟开关、二三极管、功率MOS、晶体、晶振等，应用型号超过一万种。公司稳步耕耘供应链管理，所经营的品牌均可全系列接受订单，和提供专业的技术支持，并解决客户的技术难题。
+
+世攀科技有限公司不断为客户创造价值，提供满意的产品与服务，协助客户及厂商持续提高竞争能力，致力于成为中国本土的最优秀电子元器件代理分销商。
+
+                </p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <hr/>
+    <div class="footer">
+        <p>公司地址：深圳市南山区科技园南十路航天科技创新研究院A座604室 电话：+86-755-82513039</p>
+        <a href="http://www.miitbeian.gov.cn/">备案号：粤ICP备15029087号</a>
+        <br>
+        <br>
+    </div>
+
+
+</body>
+</html>

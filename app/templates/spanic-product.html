@@ -1,0 +1,242 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>世攀科技有限公司</title>
+    <style>
+        body{
+            margin: 0px 250px;
+        }
+
+        .title{
+            font-style: italic;
+            font-size:20px;
+            float:left;
+            margin:0px;
+            padding: 0px;
+            color:blue;
+        }
+
+        .search{
+            backgrand-color:yellow;
+            padding-top:60px;
+            float:right;
+        }
+        .clearfix::after{
+            content:"";
+            clear:both;
+            display:table;
+        }
+
+        .topmenu{
+            list-style-type: none;
+            width: 925px;
+            margin:0;
+            padding:0;
+            background-color: #3366cc;
+            overflow: hidden;
+        }
+        .topmenu li{
+            float:left;
+        }
+        .topmenu li a{
+            margin:0px;
+            padding:16px;
+            color:white;
+            display:inline-block;
+            text-decoration: none;
+        }
+        .topmenu li a:hover{
+            background-color:#ff704d;
+        }
+        .bigpicture img{
+            width:925px;
+            height:300px;
+        }
+        .disp{
+            width:925px;
+        }
+        .vendor{
+            margin:10px;
+            padding:0px;
+            width:200px;
+            border-style:solid;
+            border-width:1px;
+            border-color:gray;
+            float:left;
+
+        }
+        .vendor p{
+            background-color: #3366cc;
+            margin:0px;
+            height:30px;
+            color:white;
+            text-align:center;
+
+        }
+        .vendor a img{
+            margin:2px;
+            width:194px;
+            height:70px;
+            border-style:solid;
+            border-width:1px;
+            border-color:gray;
+        }
+        .vendor a{
+            display:inline-block
+        }
+        .vendor a:hover{
+            background-color:#ff704d;
+        }
+        .application{
+            margin:10px 30px;
+            padding:0px;
+            width:640px;
+            border-style:solid;
+            border-width:1px;
+            border-color:gray;
+            float:left;
+        }
+        .applititle{
+            background-color: #E0E0E0;
+            margin:0px;
+            height:30px;
+            color:blue;
+            text-align:center;
+        }
+
+        .singlep{
+            margin:25px 15px;
+            float:left;
+            overflow: hidden;
+        }
+        .singlep a{
+            width:96px;
+            display:inline-block;
+        }
+        .singlep a:hover{
+            background-color:#ff704d;
+        }
+        .singlep a img{
+            margin:2px;
+            width:90px;
+            height:80px;
+            border-style:solid;
+            border-width:1px;
+            border-color:gray;
+        }
+        .singlep p{
+            margin:0px;
+            padding:0px;
+            font-size:12px;
+            text-align: center;
+        }
+        .footer{
+            text-align:center;
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="title">
+            <h1>spanic 世攀科技</h1>
+
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" name="search">
+                <input type="submit" value="search">
+            </form>
+
+        </div>
+    </div>
+    <div class="topmenu">
+        <li><a href="" class="active">网站首页</a></li>
+        <li><a href="{{ url_for('main.index') }}">公司介绍</a> </li>
+        <li><a href="{{ url_for('main.product') }}">代理产品</a> </li>
+        <li><a href="">解决方案</a> </li>
+        <li><a href="">人才招聘</a> </li>
+        <li><a href="">联系我们</a> </li>
+    </div>
+    <div class="bigpicture">
+        <img src="/static/picture/img_2117.gif" alt="no picture">
+    </div>
+    <div class="clearfix disp">
+        <div class="vendor">
+            <p>代理产品线</p>
+
+            <a href="http://www.union-ic.com" target="_blank"><img src="/static/picture/brand/union.gif" alt="no picture"></a>
+            <a href="http://chiphomer.com" target="_blank"><img src="/static/picture/brand/chiphomer.gif" alt="no picture"></a>
+            <a href="http://www.prisemi.com" target="_blank"><img src="/static/picture/brand/prisemi.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/ecore.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/eleconn.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/siward.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/txc.gif" alt="no picture"></a>
+            <a href=""><img src="/static/picture/brand/rakon.gif" alt="no picture"></a>
+        </div>
+        <div class="application">
+            <p class="applititle">产品应用</p>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/cpc2123.gif" alt="no picture"></a>
+                <p>背光驱动</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/yinpinggongfang.gif" alt="no picture"></a>
+                <p>音频功放</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/touch.gif" alt="no picture" width="100%" height="100%" ></a>
+                <p>触摸按键驱动</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/dcdc&ldo.gif" alt="no picture" width="100%" height="100%" ></a>
+                <p>DC/DC&LDO</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/switch.gif" alt="no picture" width="100%" height="100%" ></a>
+                <p>模拟开关</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/levelshift.gif" alt="no picture" width="100%" height="100%" ></a>
+                <p>电平转换</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/mosfet.gif" alt="no picture" ></a>
+                <p>MOS管</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/schott&trans.gif" alt="no picture" ></a>
+                <p>二、三极管</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/tvs.gif" alt="no picture" ></a>
+                <p>TVS ESD保护</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/charger.gif" alt="no picture" ></a>
+                <p>充电IC</p>
+            </div>
+            <div class="singlep">
+                <a href=""><img src="/static/picture/product/rfconn.gif" alt="no picture"></a>
+                <p>射频测试座</p>
+            </div>
+             <div class="singlep">
+                <a href=""><img src="/static/picture/product/jingti.gif" alt="no picture"></a>
+                <p>晶体晶振</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <hr/>
+    <div class="footer">
+        <p>公司地址：深圳市南山区科技园南十路航天科技创新研究院A座604室 电话：+86-755-82513039</p>
+        <a href="http://www.miitbeian.gov.cn/">备案号：粤ICP备15029087号</a>
+        <br>
+        <br>
+    </div>
+
+
+</body>
+</html>
