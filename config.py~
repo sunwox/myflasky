@@ -1,7 +1,7 @@
 import os
 import platform
 basedir = os.path.abspath(os.path.dirname(__file__))
-if platform.system().find('window'):
+if platform.system.find('window'):
     sqldir = "sqlite:///"
 else:
     sqldir = "sqlite:////"
